@@ -1,10 +1,12 @@
 <script lang="ts">
-    var woof = 0;
+    let { data } = $props();
 
+    console.log(data);
+
+    var woof = $state(0);
     function increment() {
         woof += 1;
     }
-    
     function decrement() {
         woof -= 1;
     }
