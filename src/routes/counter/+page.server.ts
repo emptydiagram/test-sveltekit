@@ -14,11 +14,9 @@ export async function load() {
 
 export const actions = {
     increment: async ({ request }) => {
-        const data = await request.formData();
-        incrementCounter();
+        await incrementCounter();
     },
     decrement: async ({ request }) => {
-        const data = await request.formData();
-        decrementCounter();
+        await decrementCounter();
     },
 }
